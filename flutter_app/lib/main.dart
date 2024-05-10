@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> generateActivity() async {
-    const String apiKey = 'oi';
+    const String apiKey = 'AIzaSyDQjuugZXfWz1IOZ-xX_Qe026RXIZaTAdM';
     final Uri apiUrl = Uri.parse(
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=$apiKey");
 

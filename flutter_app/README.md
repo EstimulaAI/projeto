@@ -16,10 +16,12 @@ O EstimulaAI é uma aplicação que usa o Gemini, a inteligência artificial do 
 
 O aplicativo foi construído utilizando Flutter, e essa decisão foi motivada visando democratizar o acesso ao EstimulaAI ao permitir a exportação do código para todas as principais plataformas - iOS, Android e web. 
 
-### Vídeo Demonstração
-[![ESTIMULA AI APP](https://img.youtube.com/vi/R_boKu4PiwY/0.jpg)](https://www.youtube.com/watch?v=R_boKu4PiwY)
-
-### Tela Incial do APP
+### Funcionamento
 <p align="center">
-<img src="assets/images/screen.png" width="200"><figcaption></figcaption>
+<img src="assets/images/live-app.gif" width="200"><figcaption></figcaption>
+</p>
+<p align="center">
+  <b>
+    <a href="https://www.youtube.com/watch?v=R_boKu4PiwY">Youtube Video</a>
+  </b>
 </p>
