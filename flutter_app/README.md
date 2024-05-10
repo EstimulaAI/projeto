@@ -1,16 +1,25 @@
-# flutter_app
+# EstimulaAI
 
-A new Flutter project.
+### Crie brincadeiras com qualquer coisa e estimule o desenvolvimento do seu filho! 🌈💙
 
-## Getting Started
+<img src="assets/images/image.png"><figcaption></figcaption>
 
-This project is a starting point for a Flutter application.
+O EstimulaAI é um chatbot que usa o Gemini, a inteligência artificial do Google, para criar brincadeiras, transformando objetos cotidianos em ferramentas que auxiliam o desenvolvimento infantil. 🧠
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <b>
+    <a href="https://adspacheco.gitbook.io/estimulaai/">Documentação Completa</a>
+  </b>
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Aplicativo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+O aplicativo foi construído utilizando Flutter, e essa decisão foi motivada visando democratizar o acesso ao EstimulaAI ao permitir a exportação do código para todas as principais plataformas - iOS, Android e web. 
+
+### Vídeo Demonstração
+[![ESTIMULA AI APP](https://img.youtube.com/vi/R_boKu4PiwY/0.jpg)](https://www.youtube.com/watch?v=R_boKu4PiwY)
+
+### Tela Incial do APP
+<p align="center">
+<img src="assets/images/screen.png" width="200"><figcaption></figcaption>
+</p>
