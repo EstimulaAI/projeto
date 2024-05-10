@@ -4,7 +4,7 @@
 
 <img src="assets/images/image.png"><figcaption></figcaption>
 
-O EstimulaAI é um chatbot que usa o Gemini, a inteligência artificial do Google, para criar brincadeiras, transformando objetos cotidianos em ferramentas que auxiliam o desenvolvimento infantil. 🧠
+O EstimulaAI é uma aplicação que usa o Gemini, a inteligência artificial do Google, para criar brincadeiras, transformando objetos cotidianos em ferramentas que auxiliam o desenvolvimento infantil. 🧠
 
 <p align="center">
   <b>
