@@ -55,7 +55,7 @@ Vídeo da aplicação em funcionamento:
 
 [Coração ícones criados por Laisa Islam Ani - Flaticon](https://www.flaticon.com/br/icones-gratis/coracao)
 
-Confira o projeto no [Google Drawings](https://docs.google.com/drawings/d/1kfvDMyM7u2c_kCwSlo5VMrCRovUbSbk857QSHfgIOzQ/edit)
+Confira o projeto no [Google Drawings](https://docs.google.com/drawings/d/11FGavAQJcTqmHO4V3oK2vHj6Q-vLwlRbv83esxslXHo/edit)
 
 ## Documentação
 
