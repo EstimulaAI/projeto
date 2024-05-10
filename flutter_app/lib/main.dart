@@ -3,11 +3,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:textfield_tags/textfield_tags.dart';
-import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-  Gemini.init(apiKey: 'AIzaSyCVMEkk25YDYh9L3t0wP6BDo_eN78ooSN0');
   runApp(const MyApp());
 }
 
@@ -76,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> generateActivity() async {
-    const String apiKey = 'AIzaSyCVMEkk25YDYh9L3t0wP6BDo_eN78ooSN0';
+    const String apiKey = 'oi';
     final Uri apiUrl = Uri.parse(
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=$apiKey");
 
@@ -163,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
                 child: Text(
-                  'EstimulaAI é uma ferramenta que gera brincadeiras lúdicas para estimular o desenvolvimento de crianças. \n\nPreencha os campos abaixo e clique em GERAR para obter uma sugestão de atividade.',
+                  'Crie brincadeiras com qualquer coisa e estimule o desenvolvimento do seu filho! \n\nPreencha os campos abaixo e clique em GERAR para obter uma sugestão de atividade.',
                   textAlign: TextAlign.center,
                 ),
               ),
