@@ -23,7 +23,7 @@ O EstimulaAI é uma aplicação que usa o Gemini, a inteligência artificial do 
 O projeto foi criado como entrega do desafio proposto durante a imersão de IA com o Google Gemini promovida pela Alura e pelo Google.
 
 
-<img src="https://www.alura.com.br/assets/img/imersoes/imersao-ia-google-gemini/logo.1715192575.png" width="200px"s><figcaption></figcaption>
+<img src="https://www.alura.com.br/assets/img/imersoes/imersao-ia-google-gemini/logo.1715192575.png" w><figcaption></figcaption>
 
 Em um primeiro momento, foi criado um protótipo do EstimulaAI usando o Google Colab e posteriormente a aplicação foi construída utilizando Flutter.
 
