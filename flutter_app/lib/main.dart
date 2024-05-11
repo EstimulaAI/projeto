@@ -42,7 +42,15 @@ class _MyHomePageState extends State<MyHomePage> {
   String _idade = "0";
 
   String? _selectedOption;
-  final List<String> options = ['Emoções', 'Fala', 'Movimento', 'Raciocínio'];
+  final List<String> options = [
+    'Andar',
+    'Coordenação',
+    'Relacionar',
+    'Emoções',
+    'Raciocínio',
+    'Curiosidade',
+    'Fala'
+  ];
   String displayText = "";
 
   bool _isButtonEnabled = true;
@@ -74,45 +82,12 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> generateActivity() async {
-    const String apiKey = 'AIzaSyDQjuugZXfWz1IOZ-xX_Qe026RXIZaTAdM';
-    final Uri apiUrl = Uri.parse(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=$apiKey");
+    final Uri apiUrl = Uri.parse("http://127.0.0.1:8000/");
 
     final Map<String, dynamic> body = {
-      "contents": [
-        {
-          "role": "user",
-          "parts": [
-            {
-              "text":
-                  "Crie uma brincadeira lúdica, para uma criança de $_idade anos de idade, que tenha os itens (${_stringTagController.getTags?.join(", ")}), e que ajude a estimular a $_selectedOption. A brincadeira deve ser segura e apropriada para a idade. Ao final diga de forma concisa o único objetivo onde a brincadeira irá auxiliar no desenvolvimento"
-            }
-          ]
-        }
-      ],
-      "generationConfig": {
-        "temperature": 0.6,
-        "maxOutputTokens": 2048,
-        "stopSequences": []
-      },
-      "safetySettings": [
-        {
-          "category": "HARM_CATEGORY_HARASSMENT",
-          "threshold": "BLOCK_LOW_AND_ABOVE"
-        },
-        {
-          "category": "HARM_CATEGORY_HATE_SPEECH",
-          "threshold": "BLOCK_LOW_AND_ABOVE"
-        },
-        {
-          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-          "threshold": "BLOCK_LOW_AND_ABOVE"
-        },
-        {
-          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-          "threshold": "BLOCK_LOW_AND_ABOVE"
-        }
-      ]
+      "idade": int.parse(_idade),
+      "area": _selectedOption,
+      "itens": _stringTagController.getTags ?? []
     };
 
     try {
@@ -120,9 +95,11 @@ class _MyHomePageState extends State<MyHomePage> {
           headers: {'Content-Type': 'application/json'},
           body: jsonEncode(body));
 
-      if (response.statusCode == 200) {
-        var data = jsonDecode(response.body);
-        var text = data['candidates'][0]['content']['parts'][0]['text'];
+      if (response.statusCode == 201) {
+        var responseBody = utf8.decode(response.bodyBytes);
+        var data = jsonDecode(responseBody);
+
+        var text = data['response'];
         setState(() {
           displayText = text;
         });

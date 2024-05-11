@@ -1,0 +1,17 @@
+[tool.poetry]
+description = ""
+authors = ["adspacheco <adspacheco07@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+litestar = "^2.7.0" 
+uvicorn = "^0.28.0"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+google-generativeai = "^0.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
